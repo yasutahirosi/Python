@@ -21,8 +21,6 @@ def trans(x):
 
 data['time']=data['time'].map(trans)
 
-
-
 data=data.iloc[:,1:]
 data1=data.set_index(['class','time'])
 data2=data1.unstack().T
@@ -34,18 +32,17 @@ data3.columns=['证券代码', '时间', '一年内到期的非流动负债', '�
        '长期借款', '非流动负债合计']
 
 clean=data3.copy()
-
 #=======================Process for NAN======================================================
 drop_subset=['资产总计','负债合计','所有者权益合计','未分配利润',
              '盈余公积金','流动负债合计','非流动负债合计',
              '当日总市值/负债总计','企业自由现金流量FCFF',
              '固定资产净额','存货净额']
 clean=clean.dropna(subset=drop_subset,how='any',axis=0)
-
 #=======================Merge with hp results==============================================
 hp=pd.read_csv('hp.csv')
 clean['时间']=clean['时间'].astype('int64')
 clean=pd.merge(clean,hp,left_on='时间',right_on='Time',how='left')
+clean=clean[clean['当日总市值/负债总计']!=' ']
 #========================Separate dataset by===============================================
 company=list(clean['证券代码'].value_counts().index)
 subset=[]
@@ -88,18 +85,142 @@ def compute(data):
     data['Cycle']=data['Cycle factor']
     data['Cycle*CF']=data['Cycle'].mul(data['CF'])
     data['Cycle*CA']=data['Cycle'].mul(data['CA'])
-    data['Q0']=data['当日总市值/负债总计']
-    data['v1f']=data['负债合计']
-    data['v8z']=data['资产总计']
-    Final=data[['证券代码', '时间','DEBT1', 'DEBT2', 'Equity1', 'Equity2', 'SL', 'LL', 'FL', 'OL',
-       'CF', 'CA','Cycle','Cycle*CF','Cycle*CA','ROA','Scale','Q0','v1f','v8z']]
-    Final.columns=['Company', 'Time','Debt1', 'Debt2', 'Equity1', 'Equity2', 'SL', 'LL', 'FL', 'OL',
-       'CF', 'CA','Cycle','Cycle*CF','Cycle*CA','ROA','Scale','Q0','v1f','v8z']
+    data['Q']=(data['当日总市值/负债总计'].astype('float')*data['负债合计'])/data['资产总计']
+    data['Cycle*Q']=data['Cycle'].mul(data['Q'])
+    Final=data[['证券代码', '时间','DEBT1', 'DEBT2', 'Equity1', 'Equity2', 'SL', 'LL', 'FL', 'OL','Q',
+       'CF', 'CA','Cycle','Cycle*Q','Cycle*CF','Cycle*CA','ROA','Scale']]
+    Final.columns=['Company', 'Time','Debt1', 'Debt2', 'Equity1', 'Equity2', 'SL', 'LL', 'FL', 'OL','Q',
+       'CF', 'CA','Cycle','Cycle*Q','Cycle*CF','Cycle*CA','ROA','Scale']
     Final.fillna(0,inplace=True)
     return Final.iloc[1:,:]
 #======================loop for all company======================================================
 subset=[compute(i) for i in subset]
 analysis=pd.concat(subset,axis=0)
-analysis.to_csv('analysis.csv',index=False)    
+analysis.sort_values(['Time'],inplace=True)
+analysis.to_csv('analysis.csv',index=False)
+
+#========================Model===================================================================
+from linearmodels.panel import PanelOLS
+from linearmodels.panel import RandomEffects
+import statsmodels.api as sm
+
+#表4-4
+data=analysis.set_index(['Company','Time'])
+dependent1=data['Debt1']
+dependent2=data['Equity1']
+dependent3=data['FL']
+dependent4=data['OL']
+dependent5=data['SL']
+dependent6=data['LL']
+dependent7=data['Debt2']
+dependent8=data['Equity2']
+
+exog1=sm.add_constant(data[['Q','CF','CA']])
+exog2=sm.add_constant(data[['Q','CF', 'CA','Cycle*Q','Cycle*CF','Cycle*CA','ROA','Scale']])
+exog3=sm.add_constant(data[['Q','CF', 'CA','Cycle','Cycle*Q','Cycle*CF','Cycle*CA','ROA','Scale']])
+
+results=['params','pvalus','s2']
+
+mod1=PanelOLS(dependent1, exog1,entity_effects=True,time_effects=True)
+res1=mod1.fit(cov_type='clustered', cluster_entity=True)
+res1.summary
+
+mod2=PanelOLS(dependent2, exog1,entity_effects=True,time_effects=True)
+res2=mod2.fit(cov_type='clustered', cluster_entity=True)
+res2.summary
+
+
+mod3=PanelOLS(dependent1, exog2,entity_effects=True,time_effects=True)
+res3=mod3.fit(cov_type='clustered', cluster_entity=True)
+res3.summary
+
+mod4=PanelOLS(dependent2, exog2,entity_effects=True,time_effects=True)
+res4=mod4.fit(cov_type='clustered', cluster_entity=True)
+res4.summary
+
+#表4-5
+
+mod5=PanelOLS(dependent3, exog1,entity_effects=True,time_effects=True)
+res5=mod5.fit(cov_type='clustered', cluster_entity=True)
+res5.summary
+
+mod6=PanelOLS(dependent4, exog1,entity_effects=True,time_effects=True)
+res6=mod6.fit(cov_type='clustered', cluster_entity=True)
+res6.summary
+
+mod7=PanelOLS(dependent3, exog2,entity_effects=True,time_effects=True)
+res7=mod7.fit(cov_type='clustered', cluster_entity=True)
+res7.summary
+
+mod8=PanelOLS(dependent4, exog2,entity_effects=True,time_effects=True)
+res8=mod8.fit(cov_type='clustered', cluster_entity=True)
+res8.summary
+
+#表4-6
+mod9=PanelOLS(dependent5, exog1,entity_effects=True,time_effects=True)
+res9=mod9.fit(cov_type='clustered', cluster_entity=True)
+res9.summary
+
+mod10=PanelOLS(dependent6, exog1,entity_effects=True,time_effects=True)
+res10=mod10.fit(cov_type='clustered', cluster_entity=True)
+res10.summary
+
+mod11=PanelOLS(dependent5, exog2,entity_effects=True,time_effects=True)
+res11=mod11.fit(cov_type='clustered', cluster_entity=True)
+res11.summary
+
+mod12=PanelOLS(dependent6, exog2,entity_effects=True,time_effects=True)
+res12=mod12.fit(cov_type='clustered', cluster_entity=True)
+res12.summary
+
+#表4-7
+mod13=RandomEffects(dependent1, exog2)
+res13=mod13.fit(cov_type='clustered', cluster_entity=True)
+res13.summary
+
+mod14=RandomEffects(dependent2, exog2)
+res14=mod14.fit(cov_type='clustered', cluster_entity=True)
+res14.summary
+
+mod15=RandomEffects(dependent7, exog3)
+res15=mod15.fit(cov_type='clustered', cluster_entity=True)
+res15.summary
+
+mod16=RandomEffects(dependent8, exog3)
+res16=mod16.fit(cov_type='clustered', cluster_entity=True)
+res16.summary
+
+#表4-14
+mod17=PanelOLS(dependent1, exog2,entity_effects=True,time_effects=True)
+res17=mod17.fit(cov_type='clustered', cluster_entity=True)
+res17.summary
+
+mod18=PanelOLS(dependent2, exog2,entity_effects=True,time_effects=True)
+res18=mod18.fit(cov_type='clustered', cluster_entity=True)
+res18.summary
+
+mod19=PanelOLS(dependent7, exog2,entity_effects=True,time_effects=True)
+res19=mod19.fit(cov_type='clustered', cluster_entity=True)
+res19.summary
+
+mod20=PanelOLS(dependent8, exog2,entity_effects=True,time_effects=True)
+res20=mod20.fit(cov_type='clustered', cluster_entity=True)
+res20.summary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     
