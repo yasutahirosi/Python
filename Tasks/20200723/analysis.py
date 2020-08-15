@@ -94,9 +94,12 @@ def compute(data):
     data['Cycle*CA']=data['Cycle'].mul(data['CA'])
     Final=data[['证券代码', '时间','DEBT1', 'DEBT2', 'Equity1', 'Equity2', 'SL', 'LL', 'FL', 'OL',
        'Q', 'CF', 'CA','Cycle','Cycle*Q','Cycle*CF','Cycle*CA','ROA','Scale']]
+    Final.columns=['Company', 'Time','Debt1', 'Debt2', 'Equity1', 'Equity2', 'SL', 'LL', 'FL', 'OL',
+       'Q', 'CF', 'CA','Cycle','Cycle*Q','Cycle*CF','Cycle*CA','ROA','Scale']
     return Final.iloc[1:,:]
 #======================loop for all company======================================================
 subset=[compute(i) for i in subset]
-    
+analysis=pd.concat(subset,axis=0)
+analysis.to_csv('analysis.csv',index=False)    
     
     
