@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 #==========================Clean Frame========================
-data=pd.read_excel(r'/Users/law/SASUniversityEdition/myfolders/Python/Tasks/20200723/data of dissertation.xlsx',
+data=pd.read_excel('data of dissertation.xlsx',
                    sheet_name='Sheet1')
 
 data['class']=data.iloc[:,0].map(lambda x:x.split()[0])
