@@ -95,8 +95,8 @@ def compute(data):
     return Final.iloc[1:,:]
 #======================loop for all company======================================================
 subset=[compute(i) for i in subset]
+subset=subset[:294]
 analysis=pd.concat(subset,axis=0)
-analysis.sort_values(['Time'],inplace=True)
 analysis.to_csv('analysis.csv',index=False)
 
 #========================Model===================================================================
