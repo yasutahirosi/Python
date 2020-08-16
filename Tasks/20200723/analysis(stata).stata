@@ -1,0 +1,4 @@
+egen id=group(company)
+xtset id time, quarterly
+asdoc xtreg debt1 q cf ca, fe nest
+asdoc xtreg debt1 q cf ca cycleq cyclecf cycleca roa scale, fe nest
