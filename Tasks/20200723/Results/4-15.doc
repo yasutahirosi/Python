@@ -20,229 +20,229 @@
 \clbrdrb\brdrw25\brdrs   \cellx2000
 \fs20\pard\intbl\qc { }\cell
 \clbrdrb\brdrw25\brdrs   \cellx3250
-\fs20\pard\intbl\qc { {fl}}\cell
+\fs20\pard\intbl\qc { {debt1}}\cell
 \clbrdrb\brdrw25\brdrs   \cellx4450
-\fs20\pard\intbl\qc { {ol}}\cell
+\fs20\pard\intbl\qc { {equity1}}\cell
 \clbrdrb\brdrw25\brdrs   \cellx5650
-\fs20\pard\intbl\qc { {fl}}\cell
+\fs20\pard\intbl\qc { {debt2}}\cell
 \clbrdrb\brdrw25\brdrs   \cellx6850
-\fs20\pard\intbl\qc { {ol}}\cell
+\fs20\pard\intbl\qc { {equity2}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { {q}}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{.003*}}\cell
+\fs20\pard\intbl\qc {{.027*}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{.004**}}\cell
+\fs20\pard\intbl\qc {{.076***}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{.015***}}\cell
+\fs20\pard\intbl\qc {{.087***}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{.011***}}\cell
+\fs20\pard\intbl\qc {{.089***}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { { }}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{(.002)}}\cell
+\fs20\pard\intbl\qc {{(.016)}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{(.002)}}\cell
+\fs20\pard\intbl\qc {{(.021)}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{(.002)}}\cell
+\fs20\pard\intbl\qc {{(.031)}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{(.002)}}\cell
+\fs20\pard\intbl\qc {{(.024)}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { {cf}}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{-.301***}}\cell
+\fs20\pard\intbl\qc {{-1.471***}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{.044***}}\cell
+\fs20\pard\intbl\qc {{-.769***}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{-.486***}}\cell
+\fs20\pard\intbl\qc {{-2.623***}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{-.126***}}\cell
+\fs20\pard\intbl\qc {{-1.152***}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { { }}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{(.007)}}\cell
+\fs20\pard\intbl\qc {{(.098)}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{(.006)}}\cell
+\fs20\pard\intbl\qc {{(.128)}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{(.011)}}\cell
+\fs20\pard\intbl\qc {{(.192)}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{(.01)}}\cell
+\fs20\pard\intbl\qc {{(.145)}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { {ca}}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{.434***}}\cell
+\fs20\pard\intbl\qc {{.22***}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{.506***}}\cell
+\fs20\pard\intbl\qc {{-.03}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{.611***}}\cell
+\fs20\pard\intbl\qc {{.225***}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{.54***}}\cell
+\fs20\pard\intbl\qc {{-.002}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { { }}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{(.005)}}\cell
+\fs20\pard\intbl\qc {{(.034)}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{(.004)}}\cell
+\fs20\pard\intbl\qc {{(.044)}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{(.006)}}\cell
+\fs20\pard\intbl\qc {{(.067)}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{(.005)}}\cell
+\fs20\pard\intbl\qc {{(.051)}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { {cycleq}}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{-.061**}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{-.146***}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{.022***}}\cell
+\fs20\pard\intbl\qc {{-.193***}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{.002***}}\cell
+\fs20\pard\intbl\qc {{-.171***}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { { }}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{(.031)}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{(.04)}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{(.001)}}\cell
+\fs20\pard\intbl\qc {{(.06)}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{(.001)}}\cell
+\fs20\pard\intbl\qc {{(.046)}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { {cyclecf}}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{.322***}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{.54***}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{.246***}}\cell
+\fs20\pard\intbl\qc {{.801***}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{.267***}}\cell
+\fs20\pard\intbl\qc {{.645***}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { { }}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{(.104)}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{(.134)}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{(.013)}}\cell
+\fs20\pard\intbl\qc {{(.202)}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{(.012)}}\cell
+\fs20\pard\intbl\qc {{(.153)}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { {cycleca}}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{-.415***}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{.053}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{-.198***}}\cell
+\fs20\pard\intbl\qc {{-.427***}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{-.023***}}\cell
+\fs20\pard\intbl\qc {{0}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { { }}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{(.067)}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{(.087)}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{(.007)}}\cell
+\fs20\pard\intbl\qc {{(.131)}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{(.006)}}\cell
+\fs20\pard\intbl\qc {{(.099)}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { {roa}}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{.048}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{.006}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{-.587***}}\cell
+\fs20\pard\intbl\qc {{.168*}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{.189***}}\cell
+\fs20\pard\intbl\qc {{.257***}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { { }}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{(.052)}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{(.067)}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{(.021)}}\cell
+\fs20\pard\intbl\qc {{(.101)}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{(.019)}}\cell
+\fs20\pard\intbl\qc {{(.077)}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { {scale}}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{.002*}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{.001}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{.026***}}\cell
+\fs20\pard\intbl\qc {{.003}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{.022***}}\cell
+\fs20\pard\intbl\qc {{.001}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { { }}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{(.001)}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{}}\cell
+\fs20\pard\intbl\qc {{(.002)}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{(.001)}}\cell
+\fs20\pard\intbl\qc {{(.002)}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{(.001)}}\cell
+\fs20\pard\intbl\qc {{(.002)}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { {_cons}}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{-.203***}}\cell
+\fs20\pard\intbl\qc {{-.01}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{-.234***}}\cell
+\fs20\pard\intbl\qc {{-.021}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{-.552***}}\cell
+\fs20\pard\intbl\qc {{.009}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{-.476***}}\cell
+\fs20\pard\intbl\qc {{-.025}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
 \fs20\pard\intbl\ql { { }}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{(.009)}}\cell
+\fs20\pard\intbl\qc {{(.021)}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{(.007)}}\cell
+\fs20\pard\intbl\qc {{(.027)}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{(.015)}}\cell
+\fs20\pard\intbl\qc {{(.04)}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{(.014)}}\cell
+\fs20\pard\intbl\qc {{(.031)}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \cellx2000
@@ -260,13 +260,13 @@
 \cellx2000
 \fs20\pard\intbl\ql { {R-squared}}\cell
 \cellx3250
-\fs20\pard\intbl\qc {{.561}}\cell
+\fs20\pard\intbl\qc {{.645}}\cell
 \cellx4450
-\fs20\pard\intbl\qc {{.546}}\cell
+\fs20\pard\intbl\qc {{.178}}\cell
 \cellx5650
-\fs20\pard\intbl\qc {{.624}}\cell
+\fs20\pard\intbl\qc {{.592}}\cell
 \cellx6850
-\fs20\pard\intbl\qc {{.573}}\cell
+\fs20\pard\intbl\qc {{.303}}\cell
 \row}
 {\trowd\trgaph108\trleft-108
 \clbrdrt\brdrw15\brdrs\cellx6850\i {Standard errors are in parentheses}\cell

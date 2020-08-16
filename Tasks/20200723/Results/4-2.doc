@@ -26,8 +26,8 @@
 \qr {{18.04}}\cell
 \qr {{-.117}}\cell
 \qr {{.193}}\cell
-\qr {{67.448}}\cell
-\qr {{6091.504}}\cell
+\qr {{67.463}}\cell
+\qr {{6093.399}}\cell
 \row
 \ql { {debt2}}\cell
 \qr {{19698}}\cell
@@ -36,9 +36,9 @@
 \qr {{-9.087}}\cell
 \qr {{30.148}}\cell
 \qr {{-.165}}\cell
-\qr {{.311}}\cell
-\qr {{58.579}}\cell
-\qr {{4599.317}}\cell
+\qr {{.31}}\cell
+\qr {{58.582}}\cell
+\qr {{4599.613}}\cell
 \row
 \ql { {equity1}}\cell
 \qr {{19698}}\cell
@@ -48,8 +48,8 @@
 \qr {{11.784}}\cell
 \qr {{-.049}}\cell
 \qr {{.246}}\cell
-\qr {{42.093}}\cell
-\qr {{2314.428}}\cell
+\qr {{42.089}}\cell
+\qr {{2314.05}}\cell
 \row
 \ql { {equity2}}\cell
 \qr {{19698}}\cell
@@ -58,20 +58,20 @@
 \qr {{-1.051}}\cell
 \qr {{14.401}}\cell
 \qr {{-.064}}\cell
-\qr {{.263}}\cell
-\qr {{43.089}}\cell
-\qr {{2402.608}}\cell
+\qr {{.265}}\cell
+\qr {{43.085}}\cell
+\qr {{2402.338}}\cell
 \row
 \ql { {fl}}\cell
 \qr {{19698}}\cell
-\qr {{.011}}\cell
+\qr {{.012}}\cell
 \qr {{.194}}\cell
 \qr {{-8.08}}\cell
 \qr {{18.391}}\cell
 \qr {{-.117}}\cell
 \qr {{.199}}\cell
-\qr {{56.198}}\cell
-\qr {{5225.811}}\cell
+\qr {{56.21}}\cell
+\qr {{5227.386}}\cell
 \row
 \ql { {ol}}\cell
 \qr {{19698}}\cell
@@ -81,19 +81,19 @@
 \qr {{11.757}}\cell
 \qr {{-.132}}\cell
 \qr {{.205}}\cell
-\qr {{45.723}}\cell
-\qr {{2739.167}}\cell
+\qr {{45.725}}\cell
+\qr {{2739.404}}\cell
 \row
 \ql { {sl}}\cell
 \qr {{19698}}\cell
 \qr {{.02}}\cell
-\qr {{.271}}\cell
+\qr {{.27}}\cell
 \qr {{-4.465}}\cell
 \qr {{26.089}}\cell
 \qr {{-.161}}\cell
-\qr {{.27}}\cell
-\qr {{62.438}}\cell
-\qr {{5172.428}}\cell
+\qr {{.269}}\cell
+\qr {{62.451}}\cell
+\qr {{5173.923}}\cell
 \row
 \ql { {ll}}\cell
 \qr {{19698}}\cell
@@ -103,19 +103,19 @@
 \qr {{9.22}}\cell
 \qr {{-.097}}\cell
 \qr {{.157}}\cell
-\qr {{44.331}}\cell
-\qr {{4681.073}}\cell
+\qr {{44.344}}\cell
+\qr {{4683.011}}\cell
 \row
 \ql { {q}}\cell
 \qr {{19698}}\cell
-\qr {{147.645}}\cell
-\qr {{129.74}}\cell
-\qr {{5.853}}\cell
-\qr {{2133.709}}\cell
-\qr {{16.639}}\cell
-\qr {{651.924}}\cell
-\qr {{3.297}}\cell
-\qr {{25}}\cell
+\qr {{4.699}}\cell
+\qr {{.776}}\cell
+\qr {{1.767}}\cell
+\qr {{7.666}}\cell
+\qr {{2.807}}\cell
+\qr {{6.48}}\cell
+\qr {{-.106}}\cell
+\qr {{3.07}}\cell
 \row
 \ql { {cf}}\cell
 \qr {{19698}}\cell
@@ -123,21 +123,21 @@
 \qr {{.161}}\cell
 \qr {{-16.927}}\cell
 \qr {{1.615}}\cell
-\qr {{-.274}}\cell
+\qr {{-.273}}\cell
 \qr {{.24}}\cell
-\qr {{-61.346}}\cell
-\qr {{6231.605}}\cell
+\qr {{-61.427}}\cell
+\qr {{6242.368}}\cell
 \row
 \ql { {ca}}\cell
 \qr {{19698}}\cell
 \qr {{.458}}\cell
-\qr {{.289}}\cell
+\qr {{.29}}\cell
 \qr {{0}}\cell
 \qr {{23.524}}\cell
 \qr {{.048}}\cell
-\qr {{.868}}\cell
-\qr {{33.984}}\cell
-\qr {{2373.989}}\cell
+\qr {{.871}}\cell
+\qr {{33.881}}\cell
+\qr {{2364.203}}\cell
 \row
 \ql { {cycle}}\cell
 \qr {{19698}}\cell
@@ -152,14 +152,14 @@
 \row
 \ql { {scale}}\cell
 \qr {{19698}}\cell
-\qr {{8.45}}\cell
-\qr {{1.322}}\cell
+\qr {{8.456}}\cell
+\qr {{1.33}}\cell
 \qr {{3.596}}\cell
 \qr {{14.364}}\cell
 \qr {{6.124}}\cell
-\qr {{12.12}}\cell
-\qr {{.685}}\cell
-\qr {{3.657}}\cell
+\qr {{12.189}}\cell
+\qr {{.695}}\cell
+\qr {{3.65}}\cell
 \row
 \ql { {roa}}\cell
 \qr {{19698}}\cell
@@ -169,8 +169,8 @@
 \qr {{3.241}}\cell
 \qr {{-.053}}\cell
 \qr {{.171}}\cell
-\qr {{16.577}}\cell
-\qr {{1057.941}}\cell
+\qr {{16.592}}\cell
+\qr {{1059.158}}\cell
 \row
 }
 {\trowd\trgaph108\trleft-108
