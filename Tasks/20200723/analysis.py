@@ -86,6 +86,7 @@ def compute(data):
     data['Cycle*CF']=data['Cycle'].mul(data['CF'])
     data['Cycle*CA']=data['Cycle'].mul(data['CA'])
     data['Q']=(data['当日总市值/负债总计'].astype('float')*data['负债合计'])/data['资产总计']
+    data['Q']=data['Q'].map(np.log)
     data['Cycle*Q']=data['Cycle'].mul(data['Q'])
     Final=data[['证券代码', '时间','DEBT1', 'DEBT2', 'Equity1', 'Equity2', 'SL', 'LL', 'FL', 'OL','Q',
        'CF', 'CA','Cycle','Cycle*Q','Cycle*CF','Cycle*CA','ROA','Scale']]
@@ -95,8 +96,8 @@ def compute(data):
     return Final.iloc[1:,:]
 #======================loop for all company======================================================
 subset=[compute(i) for i in subset]
+subset=subset[:294]
 analysis=pd.concat(subset,axis=0)
-analysis.sort_values(['Time'],inplace=True)
 analysis.to_csv('analysis.csv',index=False)
 
 #========================Model===================================================================
@@ -119,7 +120,6 @@ exog1=sm.add_constant(data[['Q','CF','CA']])
 exog2=sm.add_constant(data[['Q','CF', 'CA','Cycle*Q','Cycle*CF','Cycle*CA','ROA','Scale']])
 exog3=sm.add_constant(data[['Q','CF', 'CA','Cycle','Cycle*Q','Cycle*CF','Cycle*CA','ROA','Scale']])
 
-results=['params','pvalus','s2']
 
 mod1=PanelOLS(dependent1, exog1,entity_effects=True,time_effects=True)
 res1=mod1.fit(cov_type='clustered', cluster_entity=True)
