@@ -1,7 +1,5 @@
 #Module----------------------------------------------------------------
-import requests
 import yfinance as yf
-import MySQLdb
 from sqlalchemy import create_engine
 import pandas as pd
 # Get Bitcoin data-----------------------------------------------------
