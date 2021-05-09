@@ -2,6 +2,7 @@
 import yfinance as yf
 from sqlalchemy import create_engine
 import pandas as pd
+import numpy as np
 # Get Bitcoin data-----------------------------------------------------
 data = yf.download(tickers='BTC-USD',
                    period='max',
@@ -26,5 +27,8 @@ data.to_sql(name='btc_1d',con=engine,if_exists='append',index=False)
 # Count pct_change
 data['close_change'] = data.Close.pct_change()
 data=data.iloc[1:,:]
-correction=data[data['close_change']<=-0.1]
-correction.index=pd.to_datetime(correction.index)
+correction=data[data['close_change']<=-0.08]
+correction.reset_index(inplace=True)
+correction['date_range'] = correction.Date.diff().dt.days
+correction.fillna(0,inplace=True)
+correction.plot(x='Date',y="date_range")
