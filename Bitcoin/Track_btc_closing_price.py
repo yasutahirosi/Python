@@ -3,6 +3,12 @@ import yfinance as yf
 from sqlalchemy import create_engine
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+plt.rcParams['figure.dpi'] = 600
+plt.rcParams['savefig.dpi'] = 600
+
 # Get Bitcoin data-----------------------------------------------------
 data = yf.download(tickers='BTC-USD',
                    period='max',
@@ -27,8 +33,14 @@ data.to_sql(name='btc_1d',con=engine,if_exists='append',index=False)
 # Count pct_change
 data['close_change'] = data.Close.pct_change()
 data=data.iloc[1:,:]
-correction=data[data['close_change']<=-0.08]
+correction=data[data['close_change']<=-0.1]
 correction.reset_index(inplace=True)
 correction['date_range'] = correction.Date.diff().dt.days
 correction.fillna(0,inplace=True)
-correction.plot(x='Date',y="date_range")
+
+#Analysis
+fig,axs = plt.subplots(ncols=2)
+
+sns.scatterplot(data=correction,x='Date',y='date_range',ax=axs[0])
+
+sns.lineplot(data=data,x=data.index,y='Close',ax=axs[1])
